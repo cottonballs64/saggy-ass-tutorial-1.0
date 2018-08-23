@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+body, html {
+    font-family: sans-serif;
+    /* background: linear-gradient(tomato, white); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+h1{
+    margin: 0;
+    font-size: 4rem;
+    color: white;
+    padding-bottom: 2em;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.ills{
+    width: 50%;
+}
+aside{
+    background: white;
+    max-width: 30%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+    transition: .3s ease all;
+}
+main{
+    height: 100vh;
+    margin-left: calc(400px - 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    height: calc(100vh - 1rem - 1px);
+    display: flex;
+    flex-direction: column;
+    width: calc(400px - 4rem);
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+}
+input, button, textarea {
+    width: calc(100% - 2rem);
+    margin: 2rem;
+}
+textarea {
+    height: 100px;
+    transition: 0.3s ease-in-out;
+}
+textarea:focus{
+    background: tomato;
+    color: white;
+    border-color: orange;
+}
+button{
+    background: white;
+    border: 2px solid black;
+    padding: 1em;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background: tomato;
+    color: white;
+    border-color: orange;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    cursor: pointer;
+    color: tomato;
+}
+.opensidebar {
+    margin: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
